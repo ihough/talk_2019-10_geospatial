@@ -209,7 +209,7 @@ world %&gt;%
   plot(main = "Population")
 ```
 
-![](2019-09_r-in-grenoble_geospatial_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+![](talk_2019-10_geospatial_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -261,7 +261,7 @@ plot(world$geom)
 plot(pts, pch = 19, cex = 2, col = "blue", add = T)
 ```
 
-![](2019-09_r-in-grenoble_geospatial_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
+![](talk_2019-10_geospatial_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -363,7 +363,7 @@ ggplot() +
   coord_sf(crs = "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs")
 ```
 
-![](2019-09_r-in-grenoble_geospatial_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
+![](talk_2019-10_geospatial_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -459,7 +459,7 @@ t2m[[1:3]] %&gt;%
   plot
 ```
 
-![](2019-09_r-in-grenoble_geospatial_files/figure-html/unnamed-chunk-16-1.png)&lt;!-- --&gt;
+![](talk_2019-10_geospatial_files/figure-html/unnamed-chunk-16-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -522,7 +522,7 @@ t2m$t2m_20180601_0 %&gt;%
   plot
 ```
 
-![](2019-09_r-in-grenoble_geospatial_files/figure-html/unnamed-chunk-20-1.png)&lt;!-- --&gt;
+![](talk_2019-10_geospatial_files/figure-html/unnamed-chunk-20-1.png)&lt;!-- --&gt;
 
 
 ```r
@@ -548,7 +548,7 @@ plot(rasterToPoints(t2m$t2m_20180601_0))
 plot(world$geom, add = T)
 ```
 
-![](2019-09_r-in-grenoble_geospatial_files/figure-html/unnamed-chunk-23-1.png)&lt;!-- --&gt;
+![](talk_2019-10_geospatial_files/figure-html/unnamed-chunk-23-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -574,7 +574,7 @@ fr_rst &lt;- raster::rasterize(france, t2m)
 plot(fr_rst, axes = FALSE, box = FALSE)
 ```
 
-![](2019-09_r-in-grenoble_geospatial_files/figure-html/unnamed-chunk-24-1.png)&lt;!-- --&gt;
+![](talk_2019-10_geospatial_files/figure-html/unnamed-chunk-24-1.png)&lt;!-- --&gt;
 
 ---
 
@@ -599,13 +599,13 @@ raster::zonal()   # zonal statistics based on "zones" defined by layers of a ras
 plot(max(t2m) * fr_rst)
 ```
 
-![](2019-09_r-in-grenoble_geospatial_files/figure-html/unnamed-chunk-26-1.png)&lt;!-- --&gt;
+![](talk_2019-10_geospatial_files/figure-html/unnamed-chunk-26-1.png)&lt;!-- --&gt;
 
 ---
 
 # Mapping
 
-Livecoding: [mapping_demo.R](mapping_demo.R)
+Livecoding: [mapping_demo.R](https://github.com/ihough/talk_2019-10_geospatial_r-in-grenoble/blob/master/mapping_demo.R)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

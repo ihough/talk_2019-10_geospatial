@@ -385,4 +385,4 @@ plot(max(t2m) * fr_rst)
 
 # Mapping
 
-Livecoding: [mapping_demo.R](mapping_demo.R)
+Livecoding: [mapping_demo.R](https://github.com/ihough/talk_2019-10_geospatial_r-in-grenoble/blob/master/mapping_demo.R)
